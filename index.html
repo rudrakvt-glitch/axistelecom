@@ -256,26 +256,25 @@
   <p>© 2025 Axis Telecom. All rights reserved.</p>
 </footer>
 
-<script>
-function initEmbeddedMessaging() {
-  try {
-    embeddedservice_bootstrap.settings.language = 'en_US';
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
-    embeddedservice_bootstrap.init(
-      '00DgL00000PwhBf',
-      'webchat',
-      'https://orgfarm-5e36bfa7b6-dev-ed.develop.my.site.com/ESWwebchat1776519977112',
-      {
-        scrt2URL: 'https://orgfarm-5e36bfa7b6-dev-ed.develop.my.salesforce-scrt.com'
-      }
-    );
-  } catch (err) {
-    console.error('Error loading chat:', err);
-  }
-}
+			embeddedservice_bootstrap.init(
+				'00DgL00000PwhBf',
+				'webgithub',
+				'https://orgfarm-5e36bfa7b6-dev-ed.develop.my.site.com/ESWwebgithub1776674073566',
+				{
+					scrt2URL: 'https://orgfarm-5e36bfa7b6-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
 </script>
-
-<script src="https://orgfarm-5e36bfa7b6-dev-ed.develop.my.site.com/ESWwebchat1776519977112/assets/js/bootstrap.min.js" onload="initEmbeddedMessaging()"></script>
+<script type='text/javascript' src='https://orgfarm-5e36bfa7b6-dev-ed.develop.my.site.com/ESWwebgithub1776674073566/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 
 </body>
 </html>
